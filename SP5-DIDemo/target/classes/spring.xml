@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    <!-- <bean id="hb1" class="com.di.setter.Employee">
+        <property name="name" value="YourName"></property>
+        </bean>
+      -->
+     <!-- 
+        <bean id="emp1" class="com.di.setter.Employee">
+        <property name="eid" value="101"></property>
+        <property name="ename" value="nisha"></property>
+        <property name="esal" value="1100"></property>
+        </bean>  
+         -->    
+         <!--
+			 <bean id="std1" class="com.di.constructor.Student">
+        <constructor-arg value="101"></constructor-arg>
+        <constructor-arg value="Rahul"></constructor-arg>
+                <constructor-arg value="200"></constructor-arg>
+        </bean>
+		-->
+	<!--	
+     <bean id="c1" class="com.di.setter.customer.Customer">
+        <property name="cid" value="101"></property>
+        <property name="cnmae" value="nisha"></property>
+        </bean>-->
+        
+ </beans>

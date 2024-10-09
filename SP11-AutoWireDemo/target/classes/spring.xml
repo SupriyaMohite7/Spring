@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+     
+       <!--        By reference
+       		<bean id="course" class="com.demo.Course">
+			<property name="cid" value="1"></property>
+			<property name="cname" value="Java"></property>
+			<property name="cfees" value="10000"></property>
+			</bean>
+			
+			
+			<bean id="stud" class="com.demo.Student">
+			<property name="sid" value="101"></property>
+			<property name="sname" value="Rucha"></property>
+			<property name="course" ref="course"></property>
+			</bean>
+			
+			-->
+			
+			<!-- 
+			<bean id="stud" class="com.demo.Student" autowire="byName">
+			<property name="sid" value="101"></property>
+			<property name="sname" value="Rucha"></property>
+			</bean>
+			-->
+			
+			<!--        Autowire by Name
+			<bean id="dept" class="com.demo2.Department">
+			<property name="did" value="001"></property>
+			<property name="dname" value="HR"></property>
+			</bean>
+			<bean id="emp" class="com.demo2.Employee" autowire="byName">
+			<property name="eid" value="100"></property>
+			<property name="ename" value="Radha"></property>
+			<property name="esal" value="10000"></property>-->
+
+
+			<!--		Autowire by Constructor
+			<bean id="dept" class="com.demo2.Department">
+				<constructor-arg value="001"></constructor-arg>
+				<constructor-arg value="IT"></constructor-arg>
+			</bean>
+			<bean id="emp" class="com.demo2.Employee" autowire="constructor">
+			<constructor-arg value="100" type="int"></constructor-arg>
+			<constructor-arg value="Krishna" type="String"></constructor-arg>
+			<constructor-arg value="10100" type="double"></constructor-arg>
+
+			</bean>-->
+			
+			<!--			Autowire by Type
+			<bean id="dept123" class="com.demo2.Department">
+			<property name="did" value="001"></property>
+			<property name="dname" value="HR"></property>
+			</bean>
+			<bean id="emp" class="com.demo2.Employee" autowire="byType">
+			<property name="eid" value="100"></property>
+			<property name="ename" value="RadhaRani"></property>
+			<property name="esal" value="10000"></property>
+			</bean>-->
+ </beans>

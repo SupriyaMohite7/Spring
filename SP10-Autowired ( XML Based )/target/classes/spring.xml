@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+<!--      			Autowire by Name			-->
+      			
+      			
+      <!--
+         <bean id="address" class="com.sp.Student.Address" autowire-candidate="false">
+        <property name="houseno" value="601"></property>
+        <property name="city" value="Mumbai"></property>
+        <property name="pincode" value="400001"></property>
+        </bean> -->
+        <!--
+           <bean id="stud1" class="com.sp.Student.Student" autowire="byName">
+        <property name="name" value="Abhinav"></property>
+        <property name="rollno" value="1"></property>
+        </bean>  
+        -->
+        
+<!--        	Autowire by Type				-->
+        	
+        	
+       <!-- 
+         <bean id="Address" class="com.sp.Student.Address" autowire-candidate="false">
+        <property name="houseno" value="601"></property>
+        <property name="city" value="Nagpur"></property>
+        <property name="pincode" value="400001"></property>
+        </bean> -->
+        <!--
+         <bean id="stud1" class="com.sp.Student.Student" autowire="byType">
+        <property name="name" value="Abhinav"></property>
+        <property name="rollno" value="1"></property>
+        </bean>  
+        -->
+        
+        
+<!--        	Autowire by Constructor  		-->
+        	
+        	
+         <bean id="Address" class="com.sp.Student.Address">
+         <constructor-arg value="605" />
+         <constructor-arg value="Satara" />
+         <constructor-arg value="411703" />
+        </bean> 
+        
+         <bean id="stud1" class="com.sp.Student.Student" autowire="constructor">
+        <constructor-arg value="Krishna" index="0" />
+         <constructor-arg value="101" index="1" />
+        </bean>  
+        </beans>
